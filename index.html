@@ -457,6 +457,7 @@
         </div>
       </div>
     </footer>
+    <!-- backdrop -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>
@@ -464,69 +465,58 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <!-- Form -->
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form" action="#" method="POST">
           <div class="form-field">
-             
             <label class="input-title" for="user-name">Имя</label>
-            <input class="modal-input"
+            <input
+              class="modal-input"
               type="text"
               placeholder=""
               name="user-name"
-              
               required
               minlength="2"
               id="user-name"
               title="Твое имя"
-            /><svg
-                  class="form-icon"
-                  width="18"
-                  height="18"
-                >
-                  <use href="./images/icons.svg#icon-person"></use>
-              </svg>
+            /><svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
           </div>
 
           <div class="form-field">
             <label class="input-title" for="user-tel">Телефон</label>
-            <input  class="modal-input"
+            <input
+              class="modal-input"
               type="tel"
               pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
               name="user-tel"
               id="user-tel"
               required
-              
               title="+380 (93) 111-11-11"
-            /><svg
-                  class="form-icon"
-                  width="18"
-                  height="18"
-                >
-                  <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
+            /><svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
           </div>
 
           <div class="form-field">
             <label class="input-title" for="user-imaile">Почта</label>
-            <input class="modal-input"
+            <input
+              class="modal-input"
               type="email"
               placeholder=""
               name="user-imaile"
-              
               required
               id="user-imaile"
-            /><svg
-                  class="form-icon"
-                  width="18"
-                  height="18"
-                >
-                  <use href="./images/icons.svg#icon-email"></use>
-              </svg>
+            /><svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
           </div>
-          
+
           <div class="form-field">
             <label class="input-title" for="user-text">Коментарий</label>
-            <textarea class="modal-input textarea-item"
+            <textarea
+              class="modal-input textarea-item"
               name="user-text"
               id="user-text"
               placeholder="Введите текст"
@@ -535,16 +525,22 @@
           </div>
           <div class="modal-chexbox">
             <label class="checkbox">
-			      <input  class="checkbox-item visually-hidden" 
-            type="checkbox" 
-            name="newsletter" 
-            required />
-            <svg class="modal-form-checkbox-icon" width="16" height="15">
+              <input
+                class="checkbox-item visually-hidden"
+                type="checkbox"
+                name="newsletter"
+                required
+              />
+              <svg class="modal-form-checkbox-icon" width="16" height="15">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
-			          <span class="input-title-text">Соглашаюсь с рассылкой и принимаю <a href="" class="input-subtext" >Условия договора</a></span></label></div>
-		          <div class="text-center">
-                
+              <span class="input-title-text"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="" class="input-subtext">Условия договора</a></span
+              ></label
+            >
+          </div>
+
           <button class="button btn-modal" type="submit">Отправить</button>
         </form>
       </div>
