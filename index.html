@@ -406,7 +406,7 @@
         </div>
 
         <div class="social">
-          <h2 class="social-title">присоединяйтесь</h2>
+          <p class="social-title">присоединяйтесь</p>
 
           <ul class="team-icon-item">
             <li class="team-icon-list">
@@ -454,6 +454,28 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="container-footer-subbmit">
+          <p class="footer-subbmit-title">Подпишитесь на рассылку</p>
+          <form class="footer-subbmit-form">
+            <input
+              class="footer-subbmit-input"
+              type="email"
+              placeholder="E-mail"
+              name="user-imaile"
+              required
+              title="твои email"
+            />
+            <button class="footer-subbmit-btn button" type="submit">
+              Подписаться<svg
+                class="footer-subbmit-icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -531,9 +553,12 @@
                 name="newsletter"
                 required
               />
-              <svg class="modal-form-checkbox-icon" width="16" height="15">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg>
+
+              <span class="chexbox-custom-icon">
+                <svg class="modal-form-checkbox-icon" width="16" height="15">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
               <span class="input-title-text"
                 >Соглашаюсь с рассылкой и принимаю
                 <a href="" class="input-subtext">Условия договора</a></span
